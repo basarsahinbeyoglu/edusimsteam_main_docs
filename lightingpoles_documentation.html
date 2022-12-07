@@ -325,7 +325,7 @@
                 <footer class="pt-3 mt-4 text-muted border-top"></footer>
             </div>
             <div id="footer" style="text-align: right">
-                <button id="hide-button" type="button" class="btn btn-outline-success" onclick="hide_show_menu()">Hide Menu</button>
+                <button id="hide-button" type="button" class="btn btn-outline-success" onclick="hide_show_menu()">Menüyü Kapat</button>
 
                 <button id="previous-button" type="button" class="btn btn-outline-secondary" onclick="handlePrevious()">
                     Previous
@@ -357,7 +357,6 @@
                 });
         }
 
-        hide_show_menu()
 
         function hide_show_menu(){
             console.log(menu);
@@ -390,6 +389,7 @@
             }
 
         }
+        handleMenu("Start");
 
         function handleMenu(e) {
 
@@ -398,10 +398,22 @@
             $(`.nav-link[id=${e}]`).addClass('active');
             $(`section`).removeClass('active');
             $(`section[id=${e}]`).addClass('active');
+            if(e == "Start"){
+                document.getElementById('previous-button').style.visibility = 'hidden'
+            }
+            else{
+                document.getElementById('previous-button').style.visibility = 'visible'
+            }
+            if(e == "Final"){
+                document.getElementById('next-button').style.visibility = 'hidden'
+            }
+            else{
+                document.getElementById('next-button').style.visibility = 'visible'
+            }
+
             //var url = "https://" + String(window.location.hostname)+"/mini-browser/workspace/src/.riders/DocumentPages/" + String(e) + ".html";
             var url = "https://raw.githubusercontent.com/basarsahinbeyoglu/edusimsteam/main/lightingpoles/"+String(e)+".html";
             get_data_deploy(url);
-            hide_show_menu()
             updateAchievements();
         }
         function handlePrevious() {
@@ -417,6 +429,12 @@
                     index = i;
                     page_id = menu_array[i-1].getAttribute("id");
                 }
+            }
+            if(page_id == "Start"){
+                document.getElementById('previous-button').style.visibility = 'hidden'
+            }
+            if(index + 1 <= menu_array.length){
+                document.getElementById('next-button').style.visibility = 'visible'
             }
             console.log(index,page_id);
             var prevSection = $(`section[id=${page_id}]`);
@@ -460,7 +478,13 @@
                     page_id = menu_array[i+1].getAttribute("id");
                 }
             }
-            console.log(index,page_id);
+            if(page_id != "Start"){
+                document.getElementById('previous-button').style.visibility = 'visible'
+            }
+            if(index + 2 == menu_array.length){
+                document.getElementById('next-button').style.visibility = 'hidden'
+            }
+            console.log(index,menu_array.length);
 
             var nextSection = $(`section[id=${page_id}]`);
             var nextMenu = $(`.nav-link[id=${page_id}]`);
