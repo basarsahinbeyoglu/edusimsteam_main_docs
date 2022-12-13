@@ -289,7 +289,7 @@
                             div.innerHTML = start_content;
                         };
                         //var start_url = "https://" + String(window.location.hostname)+"/mini-browser/workspace/src/.riders/DocumentPages/Start.html";
-                        var start_url = "https://raw.githubusercontent.com/basarsahinbeyoglu/edusimsteam/main/lightingpoles/Start.html";
+                        var start_url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/lighting_poles/htmls/Start.html";
                         fetch(start_url)
                             .then(resp => {return resp.text()})
                             .then(data => {
@@ -411,7 +411,7 @@
             }
 
             //var url = "https://" + String(window.location.hostname)+"/mini-browser/workspace/src/.riders/DocumentPages/" + String(e) + ".html";
-            var url = "https://raw.githubusercontent.com/basarsahinbeyoglu/edusimsteam/main/lightingpoles/"+String(e)+".html";
+            var url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/lighting_poles/htmls/"+String(e)+".html";
             get_data_deploy(url);
             updateAchievements();
         }
@@ -441,7 +441,7 @@
             //var prevSection = $(`section[id=${activeSection.attr('id') - 1}]`);
             //var prevMenu = $(`.nav-link[id=${activeMenu.attr('id') - 1}]`);
             //var url = "https://" + String(window.location.hostname)+"/mini-browser/workspace/src/.riders/DocumentPages/"+String(page_id)+".html";
-            var url = "https://raw.githubusercontent.com/basarsahinbeyoglu/edusimsteam/main/lightingpoles/"+String(page_id)+".html";
+            var url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/lighting_poles/htmls/"+String(page_id)+".html";
             if (String(parseInt(activeMenu.attr('id'))-1) == 11){
                 
                 document.getElementById("myframe").src = url;
@@ -489,7 +489,7 @@
             var nextMenu = $(`.nav-link[id=${page_id}]`);
             console.log(activeMenu.attr('id'))
             //var url = "https://" + String(window.location.hostname)+"/mini-browser/workspace/src/.riders/DocumentPages/"+String(page_id)+".html";
-            var url = "https://raw.githubusercontent.com/basarsahinbeyoglu/edusimsteam/main/lightingpoles/"+String(page_id)+".html";
+            var url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/lighting_efficiency/htmls/"+String(page_id)+".html";
             console.log(url);
             get_data_deploy(url);
             if (nextMenu.length) {
