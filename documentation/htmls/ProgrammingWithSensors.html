@@ -13,24 +13,28 @@
     </h5>
      <br>
     
-    <img style="width: 100%;" src="/mini-browser//workspace/src/_lib/edusimsteam_main_docs/documentation/images/S3b-SensorCode.gif"
+    <img style="width: 100%;" src="/mini-browser//workspace/src/_lib/edusimsteam_main_docs/documentation/images/S4c-MotionCode.gif"
         alt="" title="LightPlacement">
         
-   <h5>Hareket sensörü tespit alanı içerisinde bir hareket algılarsa aktif hale gelir. Sensör aktif hale geldiğinde Ortam güneş tarafından çok aydınlık olduğunda, aydınlık sensörümüz <b>15 Lux</b> değerinden yüksek bir değer verecektir. Ortam çok karanlık olduğunda ise aydınlık sensörümüz <b>5 Lux</b> değerinden daha düşük bir değer verecektir.
-   Buna göre aşağıdaki adımları takip ederek bir blok programı oluşturmalısın:</h5>
+   <h5>Hareket sensörü tespit alanı içerisinde bir hareket algılarsa aktif hale gelir. Sensör aktif hale geldiğinde aşağıda gösterilen Hareket Sensörü bloğu <b>Doğru</b> çıktısını verir.
+       Eğer hareket sensörü tespit alanı içerisinde bir hareket algılamazsa sensör pasif hale gelir ve hareket bloğu <b>Yanlış</b> çıktısını verir. </h5>
+   <br>
+    <img style="width: 60%;" src="/mini-browser//workspace/src/_lib/edusimsteam_main_docs/documentation/images/Motion_Block.png"
+        alt="" title="LightPlacement">
+  <h5> Buna göre aşağıdaki adımları takip ederek bir blok programı oluşturmalısın:</h5>
         <ul>
       <li>
-        <h5> Aydınlık sensörü <b>5 Lux</b> değerinden az ölçüm yaptığında aydınlatma direğini çalıştırmalısın. </h5>
+        <h5> Hareket bloğu <b>Doğru</b> çıktısı verirse, aydınlatma direğini yakmalısın. </h5>
       </li>
       <li>
-        <h5>Aydınlık sensörü <b>15 Lux</b> değerinden fazla ölçüm yaptığında ise aydınlatma direğini söndürmelisin. 
+        <h5>Hareket bloğu <b>Yanlış</b> çıktısı verirse, aydınlatma direğini söndürmelisin. 
           </h5>
       </li>
         <li>
-        <h5>Yazdığın programın aktif hale gelmesi için Simülasyonu <b>Stop</b> tuşuna basarak durdurup, tekrar <b>Start</b> tuşuna basarak tekrar çalıştırmalısın. 
+        <h5>Yazdığın programın aktif hale gelmesi için Simülasyonu çalıştırman gerekiyor. Bunun için simülasyon ekranındaki <b>Start</b> tuşuna basman gerekir. Eğer simülasyon çalışıyor ise,önce <b>Stop</b> tuşuna basarak simülasyonu durdurup, tekrar <b>Start</b> tuşuna basarak tekrar çalıştırmalısın. 
           </h5>
       </li>  
     </ul>
-      <h5>Böylece gün ışığı aydınlatma hasat sisteminin ilk temelini  atmış olduk. Aşağıdaki Next tuşuna basarak bir sonraki bölüme geçelim.</h5>
+      <h5>Böylece hareket saptamalı aydınlatma sisteminin ilk temelini  atmış olduk. Aşağıdaki Next tuşuna basarak bir sonraki bölüme geçelim.</h5>
      <br>
     </section>
