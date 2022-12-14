@@ -9,12 +9,13 @@
 
     <p></p>
     <h5>
-        Şimdi aşağıdaki videoyu izleyerek ilk sensörümüzü yerleştirelim.
+        Gün Işığını kontrol ederek daha iyi bir sistem programlayabilirsin. 
+        Aşağıdaki videoda gün ışığını nasıl kontrol edeceğini izleyebilirsin.
     </h5>
      <br>
     
-    <img style="width: 80%;max-width: 400px" src="https://github.com/basarsahinbeyoglu/edusimsteam/blob/main/lightingpoles/PlaceSensor.gif?raw=true"
+    <img style="width: 80%;max-width: 400px" src="/mini-browser//workspace/src/_lib/edusimsteam_main_docs/documentation/images/S3c-SunControl.gif"
         alt="" title="LightPlacement">
-    <h5>Aşağıdaki Next tuşuna basarak bir sonraki bölüme geçelim.</h5>
+    <h5>Gün ışığını sürekli oyntabilir veya istediğin bir gün saatine manuel olarak getirebilirsin.Aşağıdaki Next tuşuna basarak bir sonraki bölüme geçelim.</h5>
      <br>
-</section>
+    </section>
