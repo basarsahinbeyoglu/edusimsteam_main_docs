@@ -283,9 +283,8 @@
                             console.log("First Page");
                             div.innerHTML = start_content;
                         };
-                        //var start_url = "https://" + String(window.location.hostname)+"/mini-browser/workspace/src/.riders/DocumentPages/Start.html";
                         
-                        var start_url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/lighting_efficiency/htmls/Start.html";
+                        var start_url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/documentation/htmls/Start.html";
                         fetch(start_url)
                             .then(resp => {return resp.text()})
                             .then(data => {
@@ -406,8 +405,7 @@
                 document.getElementById('next-button').style.visibility = 'visible'
             }
 
-            //var url = "https://" + String(window.location.hostname)+"/mini-browser/workspace/src/.riders/DocumentPages/" + String(e) + ".html";
-            var url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/lighting_efficiency/htmls/"+String(e)+".html";
+            var url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/documentation/htmls/"+String(e)+".html";
             get_data_deploy(url);
             updateAchievements();
         }
@@ -436,8 +434,7 @@
             var prevMenu = $(`.nav-link[id=${page_id}]`);
             //var prevSection = $(`section[id=${activeSection.attr('id') - 1}]`);
             //var prevMenu = $(`.nav-link[id=${activeMenu.attr('id') - 1}]`);
-            //var url = "https://" + String(window.location.hostname)+"/mini-browser/workspace/src/.riders/DocumentPages/"+String(page_id)+".html";
-            var url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/lighting_efficiency/htmls/"+String(page_id)+".html";
+            var url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/documentation/htmls/"+String(page_id)+".html";
             if (String(parseInt(activeMenu.attr('id'))-1) == 11){
                 
                 document.getElementById("myframe").src = url;
@@ -484,8 +481,7 @@
             var nextSection = $(`section[id=${page_id}]`);
             var nextMenu = $(`.nav-link[id=${page_id}]`);
             console.log(activeMenu.attr('id'))
-            //var url = "https://" + String(window.location.hostname)+"/mini-browser/workspace/src/.riders/DocumentPages/"+String(page_id)+".html";
-            var url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/lighting_efficiency/htmls/"+String(page_id)+".html";
+            var url = "/mini-browser//workspace/src/_lib/edusimsteam_main_docs/documentation/htmls/"+String(page_id)+".html";
             console.log(url);
             get_data_deploy(url);
             if (nextMenu.length) {
